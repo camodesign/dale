@@ -1,0 +1,835 @@
+
+:root {
+  --primary-color: #07073d;
+  --white-color: #ffffff;
+  --buttom-color:#fe0040;
+  --text-color: rgb(109, 109, 109);
+}
+
+::selection {
+  background-color: #fff8c7;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--primary-color);
+  font-family: 'gilroyextrabold';
+  
+  font-weight: 300;
+   
+}
+
+
+
+.container-p {
+  max-width: 1366px;
+  margin:  0 auto;
+}
+
+
+
+header .navbar {
+
+  background-color: var(--white-color);
+  border-radius: 6px;
+  max-width: 1366px;
+  margin:  0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 1em;
+ 
+}
+
+header {
+  margin-top: 1em;
+}
+
+.navbar-collapse {
+  display: initial;
+}
+
+
+
+.navbar-nav .nav-item {
+  display: inline-block;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.navbar-brand img {
+  width: 160px;
+}
+
+.navbar-toggler {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url('../images/icon-menu.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.navbar-nav li {
+  margin-left: 1em;
+}
+.navbar-nav li:nth-of-type(5) a {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  padding: 1em 2em;
+  border-radius: 6px;
+}
+.navbar-nav li:nth-of-type(6) a {
+  color: var(--white-color);
+  background-color: var(--buttom-color);
+  padding: 1em 2em;
+  border-radius: 6px;
+}
+
+.navbar-nav li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.hero-container {
+  align-items: center;
+}
+
+.hero {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+ 
+}
+
+
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  position: inherit;
+  bottom: -40px;
+  right: -64px;
+}
+
+
+
+.hero-presentation hr {
+  width: 140px;
+  border: 3px solid #fe0040 ;
+  margin-bottom: 2em;
+}
+
+.hero-presentation p {
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
+.hero-presentation h1 {
+  font-size: 54px;
+  margin-top: 0;
+}
+
+
+
+.profesional-section {
+  
+  margin: 8em 0;
+  background-color: #f4f5fa;
+  padding: 2em 0;
+}
+
+.profesional-container {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.card-beneficts{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+
+}
+
+.card-beneficts h5 {
+
+  position: absolute;
+right: 100px;
+top: -7px;
+background: #f4f5fa;
+padding: 0 0.5em;
+
+}
+
+.card-beneficts select {
+  width: 300px;
+  height: 60px;
+  background: none;
+  border: 3px solid #2eccef;
+  
+}
+
+
+.profesional-description {
+  width: 46%;
+}
+
+.profesional-description h2 {
+  font-size: 28px;
+  
+
+}
+
+
+.benefits ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.blogpost-container {
+  background-color: white;
+  box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  
+
+}
+
+.blogpost-container div {
+  padding: 0 1em 1em ;
+}
+
+.blogpost-container h1 {
+  font-size: 20px;
+}
+
+.blogpost-container button {
+  margin-top: 1em;
+  background-color: white;
+  border: none;
+}
+
+.blogpost-container button a {
+  text-decoration: none;
+  color: var(--buttom-color);
+  font-weight: bold;
+}
+
+
+.blogpost-last {
+   max-width: 1440px;
+   margin: 0 auto; 
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit,minmax(300px,440px));
+  grid-template-rows: auto auto;
+  column-gap: 2em;
+  row-gap: 2em;
+  justify-content: center;
+  margin-top: 3em;
+
+  
+}
+
+
+.blogpost-image-cover{
+  margin: 0;
+}
+
+.blogpost-image-cover img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.benefits .nav-options .nav-option-item {
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  padding: 1em 2em;
+  border-radius: 6px;
+  list-style: none;
+  
+}
+
+.benefits .nav-options .nav-option-item a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+
+
+.plan-domiciliary {
+  margin-right: 6em;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  margin-top: 16em;
+  background-color: var(--primary-color);
+  padding: 4em 0 1em 0;
+}
+
+.footer-content {
+  width: 100%;
+  height: auto;
+  background-color: var(--purple-color);
+  padding: 2em 0;
+}
+.footer-container{
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wave-footer {
+  /* position: absolute; */
+  width: 100%;
+  height: 160px;
+  /* height: min-content; */
+  /* bottom: calc(100% - 2px); */
+  background-image: url('../images/wave-footer.svg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-container .logo-neruonline-white img {
+  width: 180px;
+  margin-bottom: 1em;
+  
+}
+
+
+
+.logo-social-link ul li {
+  
+  margin-right: 1em;
+  text-align: left;
+}
+
+.logo-social-link ul a {
+  width: 25px;
+  height: 25px;
+  
+}
+
+.contact-dates h3 {
+  color:var(--white-color);
+
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+footer form input {
+  width: 400px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding-left: 1em;
+}
+
+footer form button {
+  padding: 1em 2em;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--buttom-color);
+  color: white;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.footer-container .contact-dates ul li {
+  text-align: left;
+}
+
+.contact-dates ul li a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.logo-vigila {
+  width:  220px;
+  margin-top: 1em;
+}
+
+.contact-dates h3 {
+  margin-bottom: 1em;
+}
+
+.contact-dates ul li {
+  margin-bottom: 1em;
+}
+
+.contact-dates ul  {
+  list-style: none;
+  text-align: right;
+}
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.social-buttons ul {
+  margin-bottom: 1em;
+}
+.social-buttons ul li {
+  display: inline;
+}
+
+.social-buttons i {
+  font-size: 2em;
+  color: white;
+  margin-left: .5em;
+  
+}
+
+.social-buttons .logo-fogafin {
+  width: 250px;
+  margin-top: 1em;
+}
+
+.copyright {
+  width: 100%;
+  
+  padding: 1em 0;
+}
+
+.copyright p {
+  text-align: center;
+  color: var(--white-color);
+}
+
+
+/*///////// media queries//////// */
+
+/* 1023 - 767 */
+
+/* 480 - 320 */
+
+@media screen and (max-width: 1194px ) {
+
+  header, .hero, .benefits-container, .footer-container, .consulting-service {
+    padding: 0 1em;
+  }
+
+  .hero {
+    margin-bottom: 0;
+  }
+  .navbar-toggler {
+    display: initial;
+  }
+
+  .navbar-collapse {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 106px;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 60%;
+   
+  }
+
+  .navbar-nav {
+    position: absolute;
+    background-color: var(--white-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* transform-origin: center; */
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: .3s;
+  }
+
+  .navbar-nav li {
+    margin-left: 0;
+  }
+
+  .navbar-nav.is-active{
+    opacity: 1;
+    transform: translateY(0);
+    
+  }
+  
+}
+
+@media screen and (max-width: 1023px){
+  header, .hero, .benefits-container, .profesional-section, .footer-container, .consulting-service {
+    padding: 0 1em;
+  }
+
+  
+
+  .hero-presentation h1 {
+    font-size: 46px;
+    
+  }
+
+
+ 
+
+  .hero-presentation p {
+    font-size: 22px;
+  }
+
+  .profesional-section {
+    margin: 0 0 12em;
+  }
+
+  .profesional-description h2 {
+    font-size: 42px;
+  }
+
+  .tittle-benefits h2 {
+    font-size: 42px;
+  }
+  .step-content img {
+    position: inherit;
+    left: -10%;
+    width: 121%;
+  }
+
+  .grid-services {
+    padding: 0 4em;
+  
+  
+}
+@media screen and (max-width: 997px){
+
+  .cards-item.col-8{
+    width: auto;
+  } 
+}
+@media screen and (max-width: 975px){
+
+  .cards-item.col-8{
+    width: 84%;
+  }
+}
+@media screen and (max-width: 964px){
+
+  .cards-item.col-8{
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 915px){
+
+  .cards-item .card{
+    width: 47%;
+  }
+
+}
+@media screen and (max-width: 900px){
+ 
+  }
+  .hero {
+    margin-bottom: 12em;
+    overflow: initial;
+  }
+
+  .hero-waves {
+    height: 128%;
+  }
+  .hero-presentation {
+    text-align: left;
+    margin-top: 5em;
+    padding: 0 4em;
+  }
+
+  .hero-image img {
+    position: initial;
+  }
+
+  .profesional-section {
+    
+    padding: 4em 0;
+    
+    
+  }
+  .nav-options {
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .nav-options li {
+    margin-right: 1em;
+  }
+  .card-beneficts h5 {
+    right: 1;
+  }
+
+  .profesional-container{ 
+    
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-beneficts {
+    justify-content: center;
+  }
+
+  .profesional-container h2 {
+    font-size: 2em;
+    margin: 0 0 2em;
+    
+  }
+
+  .profesional-image.col-6 img {
+    margin-right: 0;
+
+  }
+
+  .profesional-description {
+    padding: 0 7em;
+    margin-top: 4em;
+  }
+
+  .tittle-benefits {
+    margin-bottom: 4em;
+  }
+
+  .cards-item.col-8 {
+    width: 100%;
+    justify-content: center;
+  }
+  .cards-item .card {
+    width: 300px;
+  }
+
+  .card:nth-of-type(2), .card:nth-of-type(4) {
+    margin: .5em;
+    height: auto;
+  }
+  
+
+  .tittle-benefits {
+    padding: 0 1em;
+    text-align: center;
+  }
+.benefits-background {
+  height: 690px;
+}
+
+.therapy-services {
+  margin-bottom: 8em;
+}
+
+.therapy-services-content {
+  height: 610px;
+}
+
+.consulting-service  {
+  text-align: center;
+}
+
+.consulting-service h2 {
+  margin-bottom: 1em;
+}
+.consulting-service p {
+  padding: 0 6em;
+}
+
+.plan-domiciliary {
+  margin-right: 2em;
+}
+
+.wave-footer {
+  height: 142px;
+}
+.footer-container.row {
+  display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.social-buttons{
+
+  align-items: center;
+
+}
+
+footer form button {
+  width: 100%;
+}
+
+
+
+
+}
+@media screen and (max-width: 767px){
+
+  
+  
+  .therapy-services {
+    margin-bottom: 16em;
+  }
+
+  .therapy-services-content {
+    height: 964px;
+  }
+
+  .service-item {
+    width: 70%;
+  }
+
+  .plan-domiciliary {
+    margin-right: 0;
+  }
+
+  .plans-options {
+    margin-top: 16em;
+
+}
+
+@media screen and (max-width: 648px) {
+  .benefits-background {
+    height: auto;
+  }
+
+
+}
+
+
+@media screen and (max-width: 480px){
+
+  
+
+  .hero {
+    margin-bottom: 8em;
+}
+
+  .hero-presentation h1 {
+    font-size: 40px;
+}
+
+.hero-presentation {
+
+  padding: 0 1em;
+}
+
+.hero-image {
+  margin-top: 4em;
+}
+
+.hero-waves {
+  height: 102%;
+}
+  .profesional-section {
+    margin-top: 0;
+  }
+
+  .profesional-description {
+    padding: 0px 1em;
+    margin-top: 10em;
+  }
+
+  .benefits-background {
+    height: 1302px;
+  }
+
+  .tittle-benefits h2 {
+    font-size: 34px;
+}
+
+.grid-services {
+  padding: 0;
+}
+
+.step-content h2 {
+  font-size: 34px;
+}
+
+.therapy-services h2 {
+  font-size: 34px;
+}
+
+  .service-item {
+    width: 100%;
+}
+
+.therapy-services-content {
+  height: 1064px;
+}
+
+.consulting-service h2 {
+  font-size: 34px;
+}
+
+.consulting-service p {
+  font-size: 16px;
+  padding: 0 1em;
+ }
+
+  .plans-options h2 {
+    font-size: 34px;
+}
+
+.plans-options-container{
+  padding: 0 .5em;
+}
+
+
+
+.footer-container {
+  flex-direction: column;
+}
+
+.logo-social-link {
+
+    margin-bottom: 4em;
+}
+
+.contact-dates ul li {
+  text-align: center; 
+  }
+}
+@media screen and (max-width: 320px) {
+
+    .grid-services {
+      padding: 0;
+  } 
+}}
